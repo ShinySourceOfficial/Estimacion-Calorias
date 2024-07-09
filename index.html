@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ejercicio JS</title>
+</head>
+<body class="container">
+    <div class="row">
+        <div class="col"><h1 class="my-4">Ingreso de datos</h1></div>
+        <form id="formulario-cq">
+            <div class="col-12">
+                <div class="mb-4">
+                    <label for="weight" class="form-label">Peso (Kg):</label>
+                    <input type="number" class="form-control" id="weight" placeholder="Ej: 65.5" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-4">
+                    <label for="minutes" class="form-label">Duración del Ejercicio (Minutos):</label>
+                    <input type="number" step="0.1" class="form-control" id="minutes" placeholder="Ej: 10" required>
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Tipo de Actividad:</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input id="walk" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Caminar
+                      </label>
+                    </div>
+                    <div class="form-check pb-5">
+                      <input id="run" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Correr
+                      </label>
+                    </div>
+                  </div>
+                </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button id="Send" type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+                </div>
+            
+        </form>
+    </div>
+
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3 class="text-primary">Resultado</h3>
+        </div>
+        <div class="col-12">
+            <div class="alert alert-primary" id="result" role="alert">
+                Esperando datos para la realización del cálculo ...
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+    </div>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
